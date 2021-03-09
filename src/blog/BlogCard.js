@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import './App.css';
+import '../index.css';
 
 
-function App() {
-  const [count, setCount] = useState(0);
+const BlogCard = () => {
+
+    const [count, setCount] = useState(0);
 
     function incr() {
         setCount(count + 1)
@@ -18,8 +19,9 @@ function App() {
             <button onClick={incr}>Incr</button>
             <button onClick={decr}>Decr</button>
 
-        </div>
-  );
-}
 
-export default App;
+        </div>
+    );
+};
+
+export default BlogCard;
